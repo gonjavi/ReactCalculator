@@ -1,22 +1,20 @@
 import React from 'react';
-import { lightblue } from 'color-name';
 
 const style = {
   display: 'flex',
   flexDirection: 'row',
   width: 500,
-  marginLeft: 200,
+  marginTop: 50,
+  marginLeft: 380,
   justifyContent: 'flex-end',
-  backgroundColor: 'lightblue',
+  backgroundColor: 'gray',
 };
 
-const Display = props => {
-  const { result } = props;
-
+const Display = () => {
+ 
   return (
     <div style={style}>
       <h1>Display</h1>
-      {result}
     </div>
   );
 };

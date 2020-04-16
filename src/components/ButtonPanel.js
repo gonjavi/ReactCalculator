@@ -2,9 +2,10 @@ import React from 'react';
 
 const style = {
   display: 'flex',
+  position: 'relative',
   flexDirection: 'row',
   width: 600,
-  height: 450,
+  height: 460,
   marginTop: 1,
   marginLeft: 330,
   justifyContent: 'flex-end',
@@ -12,8 +13,7 @@ const style = {
 };
 
 const styleGroup1 = {
-  display: 'flex 50',
-  width: 500,
+  width: 598,
   height: 90,
   marginTop: 1,
   border: '1px solid gray',
@@ -21,12 +21,43 @@ const styleGroup1 = {
 };
 
 const styleGroup2 = {
-  display: 'flex 2',
-  width: 500,
+  position: 'absolute',
+  top: 92,
+  left: 0,
+  width: 598,
   height: 90,
-  marginTop: 1,
   border: '1px solid black',
-  justifyContent: 'flex-end',
+  justifyContent: 'center',
+};
+
+const styleGroup3 = {
+  position: 'absolute',
+  top: 184,
+  left: 0,
+  width: 598,
+  height: 90,
+  border: '1px solid black',
+  justifyContent: 'center',
+};
+
+const styleGroup4 = {
+  position: 'absolute',
+  top: 276,
+  left: 0,
+  width: 598,
+  height: 90,
+  border: '1px solid black',
+  justifyContent: 'center',
+};
+
+const styleGroup5 = {
+  position: 'absolute',
+  top: 368,
+  left: 0,
+  width: 598,
+  height: 90,
+  border: '1px solid black',
+  justifyContent: 'center',
 };
 
 const Group1 = () => {
@@ -43,19 +74,19 @@ const Group2 = () => {
 
 const Group3 = () => {
   return (
-    <div style={styleGroup1}>group3</div>
+    <div style={styleGroup3}>group3</div>
   );
 };
 
 const Group4 = () => {
   return (
-    <div style={styleGroup1}>group4</div>
+    <div style={styleGroup4}>group4</div>
   );
 };
 
 const Group5 = () => {
   return (
-    <div style={styleGroup1}>group5</div>
+    <div style={styleGroup5}>group5</div>
   );
 };
 

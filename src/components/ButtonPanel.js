@@ -1,10 +1,10 @@
 import React from 'react';
 
-const ButtonPanel =  {
+const ButtonPanel = () => {
 
   return (
     <div>
-      
+      <h1>ButtonPanel</h1>
     </div>
   );
 };

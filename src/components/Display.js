@@ -2,7 +2,6 @@ import React from 'react';
 import { lightblue } from 'color-name';
 
 const style = {
-    
   background: lightblue,
 };
 

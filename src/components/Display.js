@@ -2,7 +2,8 @@ import React from 'react';
 import { lightblue } from 'color-name';
 
 const style = {
-  background: lightblue,
+  
+  backgroundColor: 'lightblue',
 };
 
 const Display = props => {
@@ -10,6 +11,7 @@ const Display = props => {
 
   return (
     <div style={style}>
+      <h1>Display</h1>
       {result}
     </div>
   );

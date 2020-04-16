@@ -1,9 +1,13 @@
 import React from 'react';
 
+const style = {
+  backgroundColor: 'lightblue',
+};
+
 const ButtonPanel = () => {
 
   return (
-    <div>
+    <div style={style}>
       <h1>ButtonPanel</h1>
     </div>
   );

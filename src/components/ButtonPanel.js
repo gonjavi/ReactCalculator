@@ -11,11 +11,55 @@ const style = {
   backgroundColor: 'gray',
 };
 
+const styleGroup1 = {
+  display: 'flex',
+  flexDirection: 'row',
+  width: 500,
+  height: 90,
+  marginTop: 1,
+  border: '1px solid black',
+  justifyContent: 'flex-end',
+  backgroundColor: 'blue',
+};
+
+const Group1 = () => {
+  return (
+    <div style={styleGroup1}>group1</div>
+  );
+};
+
+const Group2 = () => {
+  return (
+    <div style={styleGroup1}>group2</div>
+  );
+};
+
+const Group3 = () => {
+  return (
+    <div style={styleGroup1}>group3</div>
+  );
+};
+
+const Group4 = () => {
+  return (
+    <div style={styleGroup1}>group4</div>
+  );
+};
+
+const Group5 = () => {
+  return (
+    <div style={styleGroup1}>group5</div>
+  );
+};
 
 const ButtonPanel = () => {
   return (
     <div style={style}>
-      <h1>ButtonPanel</h1>
+      <Group1 />
+      <Group2 />
+      <Group3 />
+      <Group4 />
+      <Group5 />
     </div>
   );
 };

@@ -3,9 +3,9 @@ import React from 'react';
 const style = {
   display: 'flex',
   flexDirection: 'row',
-  width: 500,
+  width: 600,
   marginTop: 50,
-  marginLeft: 380,
+  marginLeft: 330,
   justifyContent: 'flex-end',
   backgroundColor: 'gray',
 };

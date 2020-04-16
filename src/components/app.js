@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 
@@ -10,6 +11,7 @@ class App extends React.Component {
   render() {
     return(
       <div>
+        <h1> React Calclulator</h1>
         <Display  />
         <ButtonPanel   />
       </div>
@@ -17,4 +19,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+ReactDOM.render(<App />, document.getElementById('root'));

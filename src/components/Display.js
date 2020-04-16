@@ -2,7 +2,8 @@ import React from 'react';
 import { lightblue } from 'color-name';
 
 const style = {
-  background: 'lightblue',
+    
+  background: lightblue,
 };
 
 const Display = props => {

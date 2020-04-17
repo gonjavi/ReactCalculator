@@ -11,13 +11,7 @@ const style = {
   backgroundColor: 'gray',
 };
 
-const Display = ({ result }) => { 
-  return (
-    <div style={style}>
-      <h1>{result}</h1>
-    </div>
-  );
-};
+const Display = ({ result }) => <div style={style}><h1>{result}</h1></div>;
 
 Display.defaultProps = {
   result: '0',

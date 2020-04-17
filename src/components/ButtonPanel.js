@@ -60,27 +60,55 @@ const styleGroup5 = {
   justifyContent: 'center',
 };
 
+const styleButton = {
+  display: 'inline-flex',
+  width: 147,
+  height: 90,
+  border: '1px solid black',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
 const Group1 = () => {
   return (
-    <div style={styleGroup1}>group1</div>
+    <div style={styleGroup1}>
+      <div style={styleButton}>AC</div>
+      <div style={styleButton}>+/-</div>
+      <div style={styleButton}>A%</div>
+      <div style={styleButton}>÷</div>
+    </div>
   );
 };
 
 const Group2 = () => {
   return (
-    <div style={styleGroup2}>group2</div>
+    <div style={styleGroup2}>
+      <div style={styleButton}>7</div>
+      <div style={styleButton}>8</div>
+      <div style={styleButton}>9</div>
+      <div style={styleButton}>X</div>
+    </div>
   );
 };
 
 const Group3 = () => {
   return (
-    <div style={styleGroup3}>group3</div>
+    <div style={styleGroup3}>
+      <div style={styleButton}>4</div>
+      <div style={styleButton}>5</div>
+      <div style={styleButton}>6</div>
+      <div style={styleButton}>-</div>
+    </div>
   );
 };
 
 const Group4 = () => {
   return (
-    <div style={styleGroup4}>group4</div>
+    <div style={styleGroup4}>
+      <div style={styleButton}>1</div>
+      <div style={styleButton}>2</div>
+      <div style={styleButton}>3</div>
+      <div style={styleButton}>+</div>
+    </div>
   );
 };
 

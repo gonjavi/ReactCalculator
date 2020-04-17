@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const style = {
   display: 'flex',
@@ -10,13 +11,19 @@ const style = {
   backgroundColor: 'gray',
 };
 
-const Display = () => {
- 
+const Display = ({ result }) => { 
   return (
     <div style={style}>
-      <h1>Display</h1>
+      <h1>{result}</h1>
     </div>
   );
 };
 
+Display.defaultProps = {
+  result: '0',
+};
+
+Display.propTypes = {
+  result: PropTypes.string,
+};
 export default Display;

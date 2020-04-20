@@ -68,66 +68,56 @@ const styleButton = {
   justifyContent: 'center',
   alignItems: 'center',
 };
-const Group1 = () => {
-  return (
-    <div style={styleGroup1}>
-      <div style={styleButton}>AC</div>
-      <div style={styleButton}>+/-</div>
-      <div style={styleButton}>A%</div>
-      <div style={styleButton}>÷</div>
-    </div>
-  );
-};
+const Group1 = () => (
+  <div style={styleGroup1}>
+    <div style={styleButton}>AC</div>
+    <div style={styleButton}>+/-</div>
+    <div style={styleButton}>A%</div>
+    <div style={styleButton}>÷</div>
+  </div>
+);
 
-const Group2 = () => {
-  return (
-    <div style={styleGroup2}>
-      <div style={styleButton}>7</div>
-      <div style={styleButton}>8</div>
-      <div style={styleButton}>9</div>
-      <div style={styleButton}>X</div>
-    </div>
-  );
-};
+const Group2 = () => (
+  <div style={styleGroup2}>
+    <div style={styleButton}>7</div>
+    <div style={styleButton}>8</div>
+    <div style={styleButton}>9</div>
+    <div style={styleButton}>X</div>
+  </div>
+);
 
-const Group3 = () => {
-  return (
-    <div style={styleGroup3}>
-      <div style={styleButton}>4</div>
-      <div style={styleButton}>5</div>
-      <div style={styleButton}>6</div>
-      <div style={styleButton}>-</div>
-    </div>
-  );
-};
+const Group3 = () => (
+  <div style={styleGroup3}>
+    <div style={styleButton}>4</div>
+    <div style={styleButton}>5</div>
+    <div style={styleButton}>6</div>
+    <div style={styleButton}>-</div>
+  </div>
+);
 
-const Group4 = () => {
-  return (
-    <div style={styleGroup4}>
-      <div style={styleButton}>1</div>
-      <div style={styleButton}>2</div>
-      <div style={styleButton}>3</div>
-      <div style={styleButton}>+</div>
-    </div>
-  );
-};
 
-const Group5 = () => {
-  return (
-    <div style={styleGroup5}>group5</div>
-  );
-};
+const Group4 = () => (
+  <div style={styleGroup4}>
+    <div style={styleButton}>1</div>
+    <div style={styleButton}>2</div>
+    <div style={styleButton}>3</div>
+    <div style={styleButton}>+</div>
+  </div>
+);
 
-const ButtonPanel = () => {
-  return (
-    <div style={style}>
-      <Group1 />
-      <Group2 />
-      <Group3 />
-      <Group4 />
-      <Group5 />
-    </div>
-  );
-};
+const Group5 = () => (
+  <div style={styleGroup5}>group5</div>
+);
+
+const ButtonPanel = () => (
+  <div style={style}>
+    <Group1 />
+    <Group2 />
+    <Group3 />
+    <Group4 />
+    <Group5 />
+  </div>
+);
+
 
 export default ButtonPanel;

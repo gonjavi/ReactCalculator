@@ -68,6 +68,16 @@ const styleButton = {
   justifyContent: 'center',
   alignItems: 'center',
 };
+
+const styleZero = {
+  display: 'inline-flex',
+  width: 296,
+  height: 90,
+  border: '1px solid black',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
 const Group1 = () => (
   <div style={styleGroup1}>
     <div style={styleButton}>AC</div>
@@ -106,7 +116,11 @@ const Group4 = () => (
 );
 
 const Group5 = () => (
-  <div style={styleGroup5}>group5</div>
+  <div style={styleGroup5}>
+    <div style={styleZero}>0</div>
+    <div style={styleButton}>.</div>
+    <div style={styleButton}>=</div>
+  </div>
 );
 
 const ButtonPanel = () => (

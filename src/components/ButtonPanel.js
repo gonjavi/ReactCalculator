@@ -7,6 +7,7 @@ const style = {
   width: 600,
   height: 460,
   marginTop: 1,
+  marginBottom: 30,
   marginLeft: 330,
   justifyContent: 'flex-end',
   backgroundColor: '#E0E0E0',
@@ -68,6 +69,15 @@ const styleButton = {
   justifyContent: 'center',
   alignItems: 'center',
 };
+const rightButtons = {
+  display: 'inline-flex',
+  width: 147,
+  height: 90,
+  border: '1px solid black',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: '#FF8645',
+};
 
 const styleZero = {
   display: 'inline-flex',
@@ -78,12 +88,13 @@ const styleZero = {
   alignItems: 'center',
 };
 
+
 const Group1 = () => (
   <div style={styleGroup1}>
     <div style={styleButton}>AC</div>
     <div style={styleButton}>+/-</div>
     <div style={styleButton}>A%</div>
-    <div style={styleButton}>÷</div>
+    <div style={rightButtons}>÷</div>
   </div>
 );
 
@@ -92,7 +103,7 @@ const Group2 = () => (
     <div style={styleButton}>7</div>
     <div style={styleButton}>8</div>
     <div style={styleButton}>9</div>
-    <div style={styleButton}>X</div>
+    <div style={rightButtons}>X</div>
   </div>
 );
 
@@ -101,7 +112,7 @@ const Group3 = () => (
     <div style={styleButton}>4</div>
     <div style={styleButton}>5</div>
     <div style={styleButton}>6</div>
-    <div style={styleButton}>-</div>
+    <div style={rightButtons}>-</div>
   </div>
 );
 
@@ -111,7 +122,7 @@ const Group4 = () => (
     <div style={styleButton}>1</div>
     <div style={styleButton}>2</div>
     <div style={styleButton}>3</div>
-    <div style={styleButton}>+</div>
+    <div style={rightButtons}>+</div>
   </div>
 );
 
@@ -119,7 +130,7 @@ const Group5 = () => (
   <div style={styleGroup5}>
     <div style={styleZero}>0</div>
     <div style={styleButton}>.</div>
-    <div style={styleButton}>=</div>
+    <div style={rightButtons}>=</div>
   </div>
 );
 

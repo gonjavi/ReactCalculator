@@ -1,0 +1,61 @@
+
+.style {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 600px;
+  height: 460px;
+  margin-top: 1px;
+  margin-bottom:  30px;
+  margin-left: 330px;
+  justify-content: flex-end;
+  background-color: #E0E0E0;
+};
+
+.styleGroup1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 598px;
+  height: 90px;
+  margin-top: 1px;
+  border: 1px solid gray;
+  justify-content: flex-end;  
+};
+
+.styleGroup2 {
+  position: absolute;
+  top: 92px;
+  left: 0;
+  width: 598px;
+  height: 90px;
+  border: 1px solid black;
+  justify-content: center;
+};
+
+.Button {
+  display: inline-flex;
+  width: 147px;
+  height: 90px;
+  border: 1px solid black;
+  text-align: center;
+};
+
+.rightButtons {
+  display: inline-flex;
+  width: 147px;
+  height: 90px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF8645;
+};
+
+const styleZero {
+  display: inline-flex;
+  width: 296PX;
+  height: 90PX;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+};

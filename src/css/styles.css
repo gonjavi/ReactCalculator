@@ -1,6 +1,6 @@
 
 .style {
-  display: flex;
+  display: block;
   position: relative;
   flex-direction: row;
   width: 600px;
@@ -13,9 +13,6 @@
 };
 
 .styleGroup1 {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 598px;
   height: 90px;
   margin-top: 1px;
@@ -33,29 +30,3 @@
   justify-content: center;
 };
 
-.Button {
-  display: inline-flex;
-  width: 147px;
-  height: 90px;
-  border: 1px solid black;
-  text-align: center;
-};
-
-.rightButtons {
-  display: inline-flex;
-  width: 147px;
-  height: 90px;
-  border: 1px solid black;
-  justify-content: center;
-  align-items: center;
-  background-color: #FF8645;
-};
-
-const styleZero {
-  display: inline-flex;
-  width: 296PX;
-  height: 90PX;
-  border: 1px solid black;
-  justify-content: center;
-  align-items: center;
-};

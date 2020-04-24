@@ -2,7 +2,6 @@
 
 This a calculator app built with ReactJS. Using CSS, and props.
 
-
 ![screenshot](./calculator.png)
 
 

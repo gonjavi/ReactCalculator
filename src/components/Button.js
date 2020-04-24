@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 let styleButton = {};
+let widthh = '25%';
 
 const Button = props => {
   const {
@@ -9,7 +10,12 @@ const Button = props => {
     rightB,
     ZeroB,
     color,
+    wide,
   } = props;
+  if (wide === true) {
+    widthh = '50.3%';
+  }
+
   if (rightB === 'yes') {
     styleButton = {
       display: 'inline-flex',
@@ -23,7 +29,7 @@ const Button = props => {
   } else if (ZeroB === 'yes') {
     styleButton = {
       display: 'inline-flex',
-      width: '50.3%',
+      width: widthh,
       height: 100,
       border: '1px solid black',
       justifyContent: 'center',
@@ -50,12 +56,14 @@ Button.defaultProps = {
   rightB: '',
   ZeroB: '',
   color: '#FF8645',
+  wide: false,
 };
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
   rightB: PropTypes.string,
   ZeroB: PropTypes.string,
   color: PropTypes.string,
+  wide: PropTypes.bool,
 };
 
 export default Button;

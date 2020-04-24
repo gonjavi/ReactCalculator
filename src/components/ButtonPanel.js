@@ -47,7 +47,7 @@ const Group4 = () => (
 
 const Group5 = () => (
   <div className="styleGroup5" style={styleGroup1}>
-    <Button buttonName="0" ZeroB="yes" color="#dfe8f7" />
+    <Button buttonName="0" ZeroB="yes" color="#dfe8f7" wide />
     <Button buttonName="." color="#dfe8f7" />
     <Button buttonName="=" rightB="yes" />
   </div>

@@ -4,7 +4,12 @@ import PropTypes from 'prop-types';
 let styleButton = {};
 
 const Button = props => {
-  const { buttonName, rightB, ZeroB } = props;
+  const {
+    buttonName,
+    rightB,
+    ZeroB,
+    color,
+  } = props;
   if (rightB === 'yes') {
     styleButton = {
       display: 'inline-flex',
@@ -13,7 +18,7 @@ const Button = props => {
       border: '1px solid black',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#FF8645',
+      backgroundColor: color,
     };
   } else if (ZeroB === 'yes') {
     styleButton = {
@@ -23,6 +28,7 @@ const Button = props => {
       border: '1px solid black',
       justifyContent: 'center',
       alignItems: 'center',
+      backgroundColor: color,
     };
   } else {
     styleButton = {
@@ -32,6 +38,7 @@ const Button = props => {
       border: '1px solid black',
       justifyContent: 'center',
       alignItems: 'center',
+      backgroundColor: color,
     };
   }
   return (
@@ -42,11 +49,13 @@ const Button = props => {
 Button.defaultProps = {
   rightB: '',
   ZeroB: '',
+  color: '#FF8645',
 };
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
   rightB: PropTypes.string,
   ZeroB: PropTypes.string,
+  color: PropTypes.string,
 };
 
 export default Button;

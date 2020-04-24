@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { white } from 'color-name';
 
 const style = {
   display: 'flex',
@@ -9,7 +8,7 @@ const style = {
   height: 100,
   marginTop: 20,
   justifyContent: 'flex-end',
-  color: 'white',
+  color: '#ffffff',
   fontWeight: '700',
   backgroundColor: 'gray',
 };

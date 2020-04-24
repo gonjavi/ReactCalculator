@@ -8,7 +8,7 @@ const Button = props => {
   if (rightB === 'yes') {
     styleButton = {
       display: 'inline-flex',
-      width: 147,
+      width: '23.5%',
       height: 100,
       border: '1px solid black',
       justifyContent: 'center',
@@ -18,7 +18,7 @@ const Button = props => {
   } else if (ZeroB === 'yes') {
     styleButton = {
       display: 'inline-flex',
-      width: 296,
+      width: '50.3%',
       height: 100,
       border: '1px solid black',
       justifyContent: 'center',
@@ -27,7 +27,7 @@ const Button = props => {
   } else {
     styleButton = {
       display: 'inline-flex',
-      width: 147,
+      width: '25%',
       height: 100,
       border: '1px solid black',
       justifyContent: 'center',

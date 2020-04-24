@@ -2,8 +2,20 @@ import React from 'react';
 import Button from './Button';
 import '../css/styles.css';
 
+const styleGroup1 = {
+  position: 'relative',
+  width: 700,
+  height: 100,
+};
+
+const styleGroup2 = {
+  position: 'relative',
+  width: 700,
+  height: 100,
+};
+
 const Group1 = () => (
-  <div className="styleGroup1">
+  <div className="styleGroup1" style={styleGroup1}>
     <Button buttonName="AC" />
     <Button buttonName="+/-" />
     <Button buttonName="A%" />
@@ -12,7 +24,7 @@ const Group1 = () => (
 );
 
 const Group2 = () => (
-  <div className="styleGroup2">
+  <div className="styleGroup2" style={styleGroup1}>
     <Button buttonName="7" />
     <Button buttonName="8" />
     <Button buttonName="9" />
@@ -21,7 +33,7 @@ const Group2 = () => (
 );
 
 const Group3 = () => (
-  <div className="styleGroup3">
+  <div className="styleGroup3" style={styleGroup1}>
     <Button buttonName="4" />
     <Button buttonName="5" />
     <Button buttonName="6" />
@@ -31,7 +43,7 @@ const Group3 = () => (
 
 
 const Group4 = () => (
-  <div className="styleGroup4">
+  <div className="styleGroup4" style={styleGroup1}>
     <Button buttonName="1" />
     <Button buttonName="2" />
     <Button buttonName="3" />
@@ -40,7 +52,7 @@ const Group4 = () => (
 );
 
 const Group5 = () => (
-  <div className="styleGroup5">
+  <div className="styleGroup5" style={styleGroup1}>
     <Button buttonName="0" ZeroB="yes" />
     <Button buttonName="." />
     <Button buttonName="=" rightB="yes" />

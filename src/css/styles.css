@@ -11,7 +11,8 @@
 };
 
 .styleGroup1 {
-  width: 598px;
+  position: relative;
+  width: 656px;
   height: 100px;
   margin-top: 1px;
   border: 1px solid gray;
@@ -19,10 +20,10 @@
 };
 
 .styleGroup2 {
-  position: absolute;
-  top: 92px;
-  left: 0;
-  width: 598px;
+  position: relative;
+  /* top: 92px;
+  left: 0; */
+  width: 700px;
   height: 100px;
   border: 1px solid black;
   justify-content: center;

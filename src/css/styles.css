@@ -1,13 +1,13 @@
 
 .style {
-  display: block;
+  display: flex;  
   position: relative;
-  flex-direction: row;
-  width: 600px;
+  flex-wrap: wrap;
+  width: 700px;
   height: 460px;
   margin-top: 1px;
   margin-bottom:  30px;
-  margin-left: 330px;
+  margin-left: 300px;
   justify-content: flex-end;
   background-color: #E0E0E0;
 };

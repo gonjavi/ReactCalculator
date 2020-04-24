@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { white } from 'color-name';
 
 const style = {
   display: 'flex',
   flexDirection: 'row',
-  width: 600,
+  width: 700,
+  height: 100,
   marginTop: 20,
-  marginLeft: 330,
+  marginLeft: 300,
   justifyContent: 'flex-end',
+  color: 'white',
+  fontWeight: '700',
   backgroundColor: 'gray',
 };
 

@@ -5,7 +5,7 @@ const style = {
   display: 'flex',
   flexDirection: 'row',
   width: 600,
-  marginTop: 50,
+  marginTop: 20,
   marginLeft: 330,
   justifyContent: 'flex-end',
   backgroundColor: 'gray',

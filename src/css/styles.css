@@ -4,8 +4,7 @@
   position: relative;
   flex-wrap: wrap;
   width: 700px;
-  height: 460px;
-  margin-top: 1px;
+  height: 510px;  
   margin-bottom:  30px;
   margin-left: 300px;
   justify-content: flex-end;
@@ -14,7 +13,7 @@
 
 .styleGroup1 {
   width: 598px;
-  height: 90px;
+  height: 100px;
   margin-top: 1px;
   border: 1px solid gray;
   justify-content: flex-end;  
@@ -25,7 +24,7 @@
   top: 92px;
   left: 0;
   width: 598px;
-  height: 90px;
+  height: 100px;
   border: 1px solid black;
   justify-content: center;
 };

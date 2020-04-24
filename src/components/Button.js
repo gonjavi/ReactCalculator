@@ -9,7 +9,7 @@ const Button = props => {
     styleButton = {
       display: 'inline-flex',
       width: 147,
-      height: 90,
+      height: 100,
       border: '1px solid black',
       justifyContent: 'center',
       alignItems: 'center',
@@ -19,7 +19,7 @@ const Button = props => {
     styleButton = {
       display: 'inline-flex',
       width: 296,
-      height: 90,
+      height: 100,
       border: '1px solid black',
       justifyContent: 'center',
       alignItems: 'center',
@@ -28,7 +28,7 @@ const Button = props => {
     styleButton = {
       display: 'inline-flex',
       width: 147,
-      height: 90,
+      height: 100,
       border: '1px solid black',
       justifyContent: 'center',
       alignItems: 'center',

@@ -8,7 +8,6 @@ const style = {
   width: 700,
   height: 100,
   marginTop: 20,
-  marginLeft: 300,
   justifyContent: 'flex-end',
   color: 'white',
   fontWeight: '700',

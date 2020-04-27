@@ -6,6 +6,8 @@
   width: 700px;
   height: 510px;  
   margin-bottom:  30px;
+  margin-right: 20%;
+  margin-left: 20%;
   justify-content: center;
   background-color: #E0E0E0;
 };
@@ -21,11 +23,16 @@
 
 .styleGroup2 {
   position: relative;
-  /* top: 92px;
-  left: 0; */
   width: 700px;
   height: 100px;
   border: 1px solid black;
   justify-content: center;
 };
 
+@media screen and (max-width: 699px) {
+  .display {  
+    width: 100%;
+    margin: 0;
+  }
+  
+}

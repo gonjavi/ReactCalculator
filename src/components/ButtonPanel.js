@@ -27,7 +27,7 @@ const Group2 = () => (
 );
 
 const Group3 = () => (
-  <div className="styleGroup3" style={styleGroup1}>
+  <div style={styleGroup1}>
     <Button buttonName="4" color="#dfe8f7" />
     <Button buttonName="5" color="#dfe8f7" />
     <Button buttonName="6" color="#dfe8f7" />

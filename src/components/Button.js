@@ -13,17 +13,18 @@ const Button = props => {
     wide,
   } = props;
   if (wide === true) {
-    widthh = '50.3%';
+    widthh = '50%';
   }
 
   if (rightB === 'yes') {
     styleButton = {
       display: 'inline-flex',
-      width: '23.5%',
+      width: '25%',
       height: 100,
-      border: '1px solid black',
+      border: '1px solid gray',
       justifyContent: 'center',
       alignItems: 'center',
+      boxSizing: 'border-box',
       backgroundColor: color,
     };
   } else if (ZeroB === 'yes') {
@@ -31,8 +32,9 @@ const Button = props => {
       display: 'inline-flex',
       width: widthh,
       height: 100,
-      border: '1px solid black',
+      border: '1px solid gray',
       justifyContent: 'center',
+      boxSizing: 'border-box',
       alignItems: 'center',
       backgroundColor: color,
     };
@@ -41,8 +43,9 @@ const Button = props => {
       display: 'inline-flex',
       width: '25%',
       height: 100,
-      border: '1px solid black',
+      border: '1px solid gray',
       justifyContent: 'center',
+      boxSizing: 'border-box',
       alignItems: 'center',
       backgroundColor: color,
     };

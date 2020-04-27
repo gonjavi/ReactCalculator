@@ -1,32 +1,38 @@
 
 .style {
-  display: block;
+  display: flex;  
   position: relative;
-  flex-direction: row;
-  width: 600px;
-  height: 460px;
-  margin-top: 1px;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 510px;  
   margin-bottom:  30px;
-  margin-left: 330px;
-  justify-content: flex-end;
+  margin-right: 20%;
+  margin-left: 20%;
+  justify-content: center;
   background-color: #E0E0E0;
 };
 
 .styleGroup1 {
-  width: 598px;
-  height: 90px;
+  position: relative;
+  width: 656px;
+  height: 100px;
   margin-top: 1px;
   border: 1px solid gray;
   justify-content: flex-end;  
 };
 
 .styleGroup2 {
-  position: absolute;
-  top: 92px;
-  left: 0;
-  width: 598px;
-  height: 90px;
+  position: relative;
+  width: 700px;
+  height: 100px;
   border: 1px solid black;
   justify-content: center;
 };
 
+@media screen and (max-width: 699px) {
+  .display {  
+    width: 100%;
+    margin: 0;
+  }
+  
+}

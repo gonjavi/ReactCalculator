@@ -1,4 +1,4 @@
-import operate from './operate';
+import Operate from './operate';
 
 const Calculate = buttonName => {
   let total;
@@ -13,7 +13,7 @@ const Calculate = buttonName => {
   } else if (buttonName === 'A%') {
     
   } else if (buttonName === '÷') {
-    total = operate();
+    total = Operate();
   } else if (buttonName === 'X') {
     
   } else if (buttonName === '-') {

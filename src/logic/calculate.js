@@ -7,19 +7,15 @@ const Calculate = (data, buttonName) => {
     total *= -1;
     next *= -1;
   } else if (buttonName === 'AC') {
-    total = 0;
-    next = 0;
+    total = null;
+    next = null;
     operation = 0;
-  } else if (buttonName === '%') {
-    total = Operate(one, two, '%');
-  } else if (buttonName === '÷') {
-    total = Operate(one, two, '÷');
-  } else if (buttonName === 'X') {
-    total = Operate(one, two, 'X');
-  } else if (buttonName === '-') {
-    total = Operate(one, two, '-');
-  } else if (buttonName === '+') {
-    total = Operate(one, two, '+');
+  } else if (buttonName === '=') {
+    total = (Operate(total, next, buttonName)).string;
+    operation = null;
+    next = null;
+  } else {
+    next = Operate(next, total, buttonName);
   }
   return { total, next, operation };
 };

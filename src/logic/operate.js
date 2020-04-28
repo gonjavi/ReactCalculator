@@ -4,7 +4,7 @@ const Operate = (numberOne, numberTwo, operation) => {
   const one = Big(numberOne);
   const two = Big(numberTwo);
 
-  let result = 0;
+  let result = null;
 
   switch (operation) {
     case '-':
@@ -23,6 +23,7 @@ const Operate = (numberOne, numberTwo, operation) => {
       result = one.div(two);
       break;
     default:
+      result = null;
   }
   return { result };
 };

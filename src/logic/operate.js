@@ -6,8 +6,23 @@ const Operate = (numberOne, numberTwo, operation) => {
 
   let result = 0;
 
-  if (operation === '-') {
-    result = one - two;
+  switch (operation) {
+    case '-':
+      result = one.minus(two);
+      break;
+    case '+':
+      result = one.plus(two);
+      break;
+    case 'X':
+      result = one.times(two);
+      break;
+    case '÷':
+      result = one.div(two);
+      break;
+    case '%':
+      result = one.div(two);
+      break;
+    default:
   }
   return { result };
 };

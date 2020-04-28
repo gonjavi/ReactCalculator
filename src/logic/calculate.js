@@ -1,16 +1,14 @@
 import Operate from './operate';
 
-const Calculate = buttonName => {
-  let total;
-  let next;
-  let operation;
+const Calculate = (data, buttonName) => {
+ let { total, next, operation } = data;
 
   if (buttonName === '+/-') {
     total *= -1;
     next *= -1;
   } else if (buttonName === 'AC') {
 
-  } else if (buttonName === 'A%') {
+  } else if (buttonName === '%') {
     
   } else if (buttonName === '÷') {
     total = Operate();

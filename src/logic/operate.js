@@ -1,9 +1,8 @@
-const Big = require('big.js');
+const Big = require('big-js');
 
-const Operate = (numberOne, numberTwo, operation) => {
+const operate = (numberOne, numberTwo, operation) => {
   const one = Big(numberOne);
   const two = Big(numberTwo);
-
   let result = null;
 
   switch (operation) {
@@ -32,4 +31,4 @@ const Operate = (numberOne, numberTwo, operation) => {
   return { result };
 };
 
-export default Operate;
+export default operate;

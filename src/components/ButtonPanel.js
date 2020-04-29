@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 import '../css/styles.css';
 
@@ -53,14 +54,21 @@ const Group5 = () => (
   </div>
 );
 
-const ButtonPanel = () => (
-  <div className="style">
-    <Group1 />
-    <Group2 />
-    <Group3 />
-    <Group4 />
-    <Group5 />
-  </div>
-);
+const ButtonPanel = props => {
+  const { onClick } = props;
+  return (
+    <div className="style">
+      <Group1 onClick={onClick} />
+      <Group2 onClick={onClick} />
+      <Group3 onClick={onClick} />
+      <Group4 onClick={onClick} />
+      <Group5 onClick={onClick} />
+    </div>
+  );
+};
+
+ButtonPanel.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default ButtonPanel;

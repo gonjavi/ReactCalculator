@@ -24,7 +24,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <Display result={total || next} />
-        <ButtonPanel />
+        <ButtonPanel onClick={this.handleClick} />
       </div>
     );
   }

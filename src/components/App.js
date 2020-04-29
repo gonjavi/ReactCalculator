@@ -16,19 +16,14 @@ class App extends React.Component {
 
   HandleClick(buttonName) {
     const data = Calculate(this.state, buttonName);
-    const { total, next, operation } = data;
-
-    this.setState({
-      total,
-      next,
-      operation,
-    });
+    this.setState(data);
   }
 
   render() {
+    const { total, next } = this.state;
     return (
       <div className="App">
-        <Display />
+        <Display result={total || next} />
         <ButtonPanel />
       </div>
     );

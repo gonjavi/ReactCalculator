@@ -17,7 +17,11 @@ const Operate = (numberOne, numberTwo, operation) => {
       result = one.times(two);
       break;
     case '÷':
-      result = one.div(two);
+      if (two === 0) {
+        result = 'you cannot divide by zero';
+      } else {
+        result = one.div(two);
+      }
       break;
     case '%':
       result = one.div(two);

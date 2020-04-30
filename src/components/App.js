@@ -9,20 +9,15 @@ class App extends React.Component {
     super(props);
     this.state = {
       total: null,
-      next: null,
+      next: '',
+      // eslint-disable-next-line react/no-unused-state
       operation: null,
     };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(buttonName) {
-    const data = calculate(this.state, buttonName);
-    const { total, next, operation } = data;
-    this.setState({
-      total,
-      next,
-      operation,
-    });
+    this.setState(state => calculate(state, buttonName));
   }
 
   render() {

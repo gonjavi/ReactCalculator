@@ -16,7 +16,7 @@ const ButtonPanel = props => {
       <div className="styleGroup1" style={styleGroup1}>
         <Button buttonName="AC" handleClick={onClick} color="#dfe8f7" />
         <Button buttonName="+/-" handleClick={onClick} color="#dfe8f7" />
-        <Button buttonName="A%" handleClick={onClick} color="#dfe8f7" />
+        <Button buttonName="%" handleClick={onClick} color="#dfe8f7" />
         <Button buttonName="÷" handleClick={onClick} rightB="yes" />
       </div>
       <div className="styleGroup2" style={styleGroup1}>

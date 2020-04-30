@@ -12,12 +12,17 @@ const calculate = (data, buttonName) => {
     next = null;
     operation = null;
   } else if (buttonName === '=') {
-    total = (operate(total, next, buttonName)).string;
-    operation = null;
+    if (total !== null && next !== null) {
+      total = operate(total, next, buttonName);
+    }
+    operation = buttonName;
     next = null;
   } else {
-    next = operate(next, total, buttonName);
-    operation = buttonName;
+    next += buttonName;
+    if (buttonName === '+' || buttonName === '-' || buttonName === 'X' || buttonName === '÷') {
+      total = next.slice(0, -1);
+      next = '';
+    }
   }
   return { total, next, operation };
 };

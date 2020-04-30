@@ -11,7 +11,7 @@ const Button = props => {
     ZeroB,
     color,
     wide,
-    onClick,
+    handleClick,
   } = props;
   if (wide === true) {
     widthh = '50%';
@@ -52,7 +52,7 @@ const Button = props => {
     };
   }
   return (
-    <button style={styleButton} onClick={() => onClick(buttonName)} type="button">{buttonName}</button>
+    <button style={styleButton} onClick={() => handleClick(buttonName)} type="button">{buttonName}</button>
   );
 };
 
@@ -68,7 +68,7 @@ Button.propTypes = {
   ZeroB: PropTypes.string,
   color: PropTypes.string,
   wide: PropTypes.bool,
-  onClick: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Button;

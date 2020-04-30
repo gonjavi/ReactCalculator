@@ -1,6 +1,7 @@
 const Big = require('big-js');
 
 const operate = (numberOne, numberTwo, operation) => {
+  console.log({numberOne, numberTwo, operation });
   const one = Big(numberOne);
   const two = Big(numberTwo);
   let result = null;
@@ -28,7 +29,7 @@ const operate = (numberOne, numberTwo, operation) => {
     default:
       result = null;
   }
-  return { result };
+  return result.toString();
 };
 
 export default operate;

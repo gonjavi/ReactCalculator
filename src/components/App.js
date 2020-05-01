@@ -10,7 +10,6 @@ class App extends React.Component {
     this.state = {
       total: null,
       next: null,
-      // eslint-disable-next-line react/no-unused-state
       operation: null,
     };
     this.handleClick = this.handleClick.bind(this);
@@ -21,10 +20,19 @@ class App extends React.Component {
   }
 
   render() {
-    const { total, next } = this.state;
+    const { total, next, operation } = this.state;
+    let result;
+    if (next) {
+      result = next;
+    } else if (total) {
+      result = total;
+    } else if (total && operation && next) {
+      result = total;
+    }
+
     return (
       <div className="App">
-        <Display result={total || next} />
+        <Display result={result} />
         <ButtonPanel onClick={this.handleClick} />
       </div>
     );

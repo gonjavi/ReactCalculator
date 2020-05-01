@@ -9,7 +9,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       total: null,
-      next: '',
+      next: null,
       // eslint-disable-next-line react/no-unused-state
       operation: null,
     };

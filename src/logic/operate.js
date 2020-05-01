@@ -2,7 +2,7 @@ const Big = require('big-js');
 
 const operate = (numberOne, numberTwo, operation) => {
   let result = null;
-  if (numberOne === '.' || numberTwo === '.') {
+  if (numberOne === '.' || numberTwo === '.' || numberTwo === '' || numberOne === 'error') {
     result = 'error';
     return result.toString();
   }
@@ -10,6 +10,7 @@ const operate = (numberOne, numberTwo, operation) => {
     result = 'error';
     return result.toString();
   }
+ 
   const one = Big(numberOne);
   const two = Big(numberTwo);
 

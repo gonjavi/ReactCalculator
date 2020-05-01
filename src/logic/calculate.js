@@ -15,16 +15,19 @@ const calculate = (data, buttonName) => {
     if (total !== null && next !== null && operation !== null) {
       total = operate(total, next, operation);
     }
-    operation = buttonName;
+    operation = '';
     next = '';
   } else {
+    if ((next === '' || next === null) && total === null && buttonName === '-') {
+      next = buttonName;
+    }
     if (buttonName !== '+' && buttonName !== '-' && buttonName !== 'X' && buttonName !== '÷' && buttonName !== '%') {
       if (next === null) {
         next = '';
       }
       next += buttonName;
     }
-    if (buttonName === '+' || buttonName === '-' || buttonName === 'X' || buttonName === '÷' || buttonName === '%') {
+    if (next !== '-' && (buttonName === '+' || buttonName === '-' || buttonName === 'X' || buttonName === '÷' || buttonName === '%')) {
       operation = buttonName;
       if (total === 'error') {
         total = null;

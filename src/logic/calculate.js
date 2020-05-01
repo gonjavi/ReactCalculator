@@ -18,13 +18,13 @@ const calculate = (data, buttonName) => {
     operation = buttonName;
     next = '';
   } else {
-    if (buttonName !== '+' && buttonName !== '-' && buttonName !== 'X' && buttonName !== '÷') {
+    if (buttonName !== '+' && buttonName !== '-' && buttonName !== 'X' && buttonName !== '÷' && buttonName !== '%') {
       if (next === null) {
         next = '';
       }
       next += buttonName;
     }
-    if (buttonName === '+' || buttonName === '-' || buttonName === 'X' || buttonName === '÷') {
+    if (buttonName === '+' || buttonName === '-' || buttonName === 'X' || buttonName === '÷' || buttonName === '%') {
       operation = buttonName;
       if (total === 'error') {
         total = null;

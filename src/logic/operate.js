@@ -6,13 +6,12 @@ const operate = (numberOne, numberTwo, operation) => {
     result = 'error';
     return result.toString();
   }
-  const one = Big(numberOne);
-  const two = Big(numberTwo);
-
-  if (two === '0' && operation === '÷') {
-    result = 'you cannot divide by zero';
+  if (numberTwo === '0' && operation === '÷') {
+    result = 'error';
     return result.toString();
   }
+  const one = Big(numberOne);
+  const two = Big(numberTwo);
 
   switch (operation) {
     case '-':
@@ -25,14 +24,10 @@ const operate = (numberOne, numberTwo, operation) => {
       result = one.times(two);
       break;
     case '÷':
-      if (two === '0') {
-        result = 'you cannot divide by zero';
-      } else {
-        result = one.div(two);
-      }
+      result = one.div(two);
       break;
     case '%':
-      result = one.div(two);
+      result = one.times(two).div(100);
       break;
     default:
       result = null;

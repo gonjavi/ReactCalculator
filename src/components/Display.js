@@ -7,6 +7,7 @@ const style = {
   flexDirection: 'row',
   width: 700,
   height: 100,
+  marginTop: 50,
   boxSizing: 'border-box',
   justifyContent: 'flex-end',
   alignItems: 'center',

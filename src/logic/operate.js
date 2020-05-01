@@ -1,10 +1,18 @@
 const Big = require('big-js');
 
 const operate = (numberOne, numberTwo, operation) => {
-  console.log({numberOne, numberTwo, operation });
+  let result = null;
+  if (numberOne === '.' || numberTwo === '.') {
+    result = 'error';
+    return result.toString();
+  }
   const one = Big(numberOne);
   const two = Big(numberTwo);
-  let result = null;
+
+  if (two === '0' && operation === '÷') {
+    result = 'you cannot divide by zero';
+    return result.toString();
+  }
 
   switch (operation) {
     case '-':
@@ -17,7 +25,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = one.times(two);
       break;
     case '÷':
-      if (two === 0) {
+      if (two === '0') {
         result = 'you cannot divide by zero';
       } else {
         result = one.div(two);

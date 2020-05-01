@@ -16,13 +16,23 @@ const calculate = (data, buttonName) => {
       total = operate(total, next, operation);
     }
     operation = buttonName;
-    next = null;
+    next = '';
   } else {
-    next += buttonName;
+    if (buttonName !== '+' && buttonName !== '-' && buttonName !== 'X' && buttonName !== '÷') {
+      if (next === null) {
+        next = '';
+      }
+      next += buttonName;
+    }
     if (buttonName === '+' || buttonName === '-' || buttonName === 'X' || buttonName === '÷') {
       operation = buttonName;
-      total = next.slice(0, -1);
-      next = '';
+      if (total === 'error') {
+        total = null;
+      }
+      if (total === null && next !== '') {
+        total = next;
+        next = '';
+      }
     }
   }
   return { total, next, operation };

@@ -5,7 +5,11 @@ const calculate = (data, buttonName) => {
 
   if (buttonName === '+/-') {
     total *= -1;
-    next *= -1;
+    if (!total) {
+      next *= -1;
+      total = next;
+      next = null;
+    }
     operation = null;
   } else if (buttonName === 'AC') {
     total = null;

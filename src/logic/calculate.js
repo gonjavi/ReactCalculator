@@ -38,6 +38,14 @@ const calculate = (data, buttonName) => {
       if (total === 'error') {
         total = null;
       }
+      if (next !== null) {
+        if (total !== null && operation !== null) {
+          total = operate(total, next, operation);
+          next = null;
+        } else {
+          total = null;
+        }
+      }
       if (total === null && next !== '') {
         total = next;
         next = '';

@@ -26,6 +26,7 @@ const Button = props => {
       justifyContent: 'center',
       alignItems: 'center',
       boxSizing: 'border-box',
+      fontSize: 25,
       backgroundColor: color,
     };
   } else if (ZeroB === 'yes') {
@@ -37,6 +38,7 @@ const Button = props => {
       justifyContent: 'center',
       boxSizing: 'border-box',
       alignItems: 'center',
+      fontSize: 25,
       backgroundColor: color,
     };
   } else {
@@ -48,6 +50,7 @@ const Button = props => {
       justifyContent: 'center',
       boxSizing: 'border-box',
       alignItems: 'center',
+      fontSize: 25,
       backgroundColor: color,
     };
   }

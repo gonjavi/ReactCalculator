@@ -12,6 +12,7 @@ const style = {
   justifyContent: 'flex-end',
   alignItems: 'center',
   color: '#ffffff',
+  fontSize: 30,
   fontWeight: '700',
   backgroundColor: 'gray',
 };

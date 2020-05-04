@@ -7,15 +7,17 @@ const style = {
   flexDirection: 'row',
   width: 700,
   height: 100,
+  marginTop: 50,
   boxSizing: 'border-box',
   justifyContent: 'flex-end',
   alignItems: 'center',
   color: '#ffffff',
+  fontSize: 30,
   fontWeight: '700',
   backgroundColor: 'gray',
 };
 
-const Display = ({ result }) => <div className="display" style={style}><h1>{result}</h1></div>;
+const Display = ({ result }) => <div className="display" style={style}><h1>{result || '0' }</h1></div>;
 
 Display.defaultProps = {
   result: '0',

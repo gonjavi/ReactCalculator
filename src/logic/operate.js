@@ -1,10 +1,18 @@
-const Big = require('big.js');
+const Big = require('big-js');
 
-const Operate = (numberOne, numberTwo, operation) => {
+const operate = (numberOne, numberTwo, operation) => {
+  let result = null;
+  if (numberOne === '.' || numberTwo === '.' || numberTwo === '' || numberOne === 'error') {
+    result = 'error';
+    return result.toString();
+  }
+  if (numberTwo === '0' && operation === '÷') {
+    result = 'error';
+    return result.toString();
+  }
+
   const one = Big(numberOne);
   const two = Big(numberTwo);
-
-  let result = null;
 
   switch (operation) {
     case '-':
@@ -20,12 +28,12 @@ const Operate = (numberOne, numberTwo, operation) => {
       result = one.div(two);
       break;
     case '%':
-      result = one.div(two);
+      result = one.times(two).div(100);
       break;
     default:
       result = null;
   }
-  return { result };
+  return result.toString();
 };
 
-export default Operate;
+export default operate;

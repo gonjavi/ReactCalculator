@@ -1,23 +1,58 @@
-import Operate from './operate';
+import operate from './operate';
 
-const Calculate = (data, buttonName) => {
+const calculate = (data, buttonName) => {
   let { total, next, operation } = data;
 
   if (buttonName === '+/-') {
     total *= -1;
-    next *= -1;
+    if (!total) {
+      next *= -1;
+      total = next;
+      next = null;
+    }
+    operation = null;
   } else if (buttonName === 'AC') {
     total = null;
     next = null;
-    operation = 0;
-  } else if (buttonName === '=') {
-    total = (Operate(total, next, buttonName)).string;
     operation = null;
-    next = null;
+  } else if (buttonName === '=') {
+    if (total !== null && next !== null && operation !== null) {
+      total = operate(total, next, operation);
+      operation = null;
+      next = null;
+    } else {
+      total = null;
+    }
   } else {
-    next = Operate(next, total, buttonName);
+    if ((next === '' || next === null) && total === null && buttonName === '-') {
+      next = buttonName;
+    }
+    if (buttonName !== '+' && buttonName !== '-' && buttonName !== 'X' && buttonName !== '÷' && buttonName !== '%') {
+      if (next === null) {
+        next = '';
+      }
+      next += buttonName;
+    }
+    if (next !== '-' && (buttonName === '+' || buttonName === '-' || buttonName === 'X' || buttonName === '÷' || buttonName === '%')) {
+      operation = buttonName;
+      if (total === 'error') {
+        total = null;
+      }
+      if (next !== null) {
+        if (total !== null && operation !== null) {
+          total = operate(total, next, operation);
+          next = null;
+        } else {
+          total = null;
+        }
+      }
+      if (total === null && next !== '') {
+        total = next;
+        next = '';
+      }
+    }
   }
   return { total, next, operation };
 };
 
-export default Calculate;
+export default calculate;

@@ -11,6 +11,7 @@ const Button = props => {
     ZeroB,
     color,
     wide,
+    handleClick,
   } = props;
   if (wide === true) {
     widthh = '50%';
@@ -25,6 +26,7 @@ const Button = props => {
       justifyContent: 'center',
       alignItems: 'center',
       boxSizing: 'border-box',
+      fontSize: 25,
       backgroundColor: color,
     };
   } else if (ZeroB === 'yes') {
@@ -36,6 +38,7 @@ const Button = props => {
       justifyContent: 'center',
       boxSizing: 'border-box',
       alignItems: 'center',
+      fontSize: 25,
       backgroundColor: color,
     };
   } else {
@@ -47,11 +50,12 @@ const Button = props => {
       justifyContent: 'center',
       boxSizing: 'border-box',
       alignItems: 'center',
+      fontSize: 25,
       backgroundColor: color,
     };
   }
   return (
-    <div style={styleButton}>{buttonName}</div>
+    <button style={styleButton} onClick={() => handleClick(buttonName)} type="button">{buttonName}</button>
   );
 };
 
@@ -67,6 +71,7 @@ Button.propTypes = {
   ZeroB: PropTypes.string,
   color: PropTypes.string,
   wide: PropTypes.bool,
+  handleClick: PropTypes.func.isRequired,
 };
 
 export default Button;
